@@ -23,8 +23,6 @@ from YukkiMusic.utils.inline.play import (stream_markup,
 from YukkiMusic.utils.stream.autoclear import auto_clean
 from YukkiMusic.utils.thumbnails import gen_thumb
 
-
-
 # Commands
 SKIP_COMMAND = get_command("SKIP_COMMAND")
 
