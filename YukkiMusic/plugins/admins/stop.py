@@ -15,8 +15,8 @@ from strings import get_command
 from YukkiMusic import app
 from YukkiMusic.core.call import Yukki
 from YukkiMusic.utils.database import set_loop
-from YukkiMusic.utils.decorators import AdminRightsChec
-       
+from YukkiMusic.utils.decorators import AdminRightsCheck
+
 # Commands
 STOP_COMMAND = get_command("STOP_COMMAND")
 
