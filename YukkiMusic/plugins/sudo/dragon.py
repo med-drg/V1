@@ -27,7 +27,7 @@ async def khalid(client: Client, message: Message):
                 ],
                 [
                     InlineKeyboardButton(
-                        "المطور⁦", =f"https://t.me/ku_kx"
+                        "", url=f"https://t.me/ku_kx"
                 ],
             ]
         ),
