@@ -42,7 +42,7 @@ force_btn = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton(
-                text="اشترك هنا", url="https://t.me/yy8gg"
+                text="اشترك هنا", url="https://t.me/معرف قناتك بدون @"
             ),                        
         ],        
     ]
@@ -51,10 +51,10 @@ force_btn = InlineKeyboardMarkup(
 async def check_is_joined(message):    
     try:
         userid = message.from_user.id
-        status = await app.get_chat_member("yy8gg", userid)
+        status = await app.get_chat_member("معرف قناتك بدون @", userid)
         return True
     except Exception:
-        await message.reply_text("عذرا ؏ُـمريـہ أنت غير مشترك في @pla_m1 ** \n**انضم لتستطيع تشغيل الاغاني**",reply_markup=force_btn,parse_mode="markdown",disable_web_page_preview=False)
+        await message.reply_text("عذرا ؏ُـمريـہ أنت غير مشترك في @YY8GG ** \n**انضم لتستطيع تشغيل الاغاني**",reply_markup=force_btn,parse_mode="markdown",disable_web_page_preview=False)
         return False
 
 # Command
