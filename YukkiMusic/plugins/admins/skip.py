@@ -22,6 +22,25 @@ from YukkiMusic.utils.inline.play import (stream_markup,
                                           telegram_markup)
 from YukkiMusic.utils.stream.autoclear import auto_clean
 from YukkiMusic.utils.thumbnails import gen_thumb
+force_btn = InlineKeyboardMarkup(
+    [
+        [
+            InlineKeyboardButton(
+                text="اشترك هنا", url="https://t.me/yy8gg"
+            ),                        
+        ],        
+    ]
+)
+
+async def check_is_joined(message):    
+    try:
+        userid = message.from_user.id
+        status = await app.get_chat_member("yy8gg", userid)
+        return True
+    except Exception:
+        await message.reply_text("عذرا ؏ُـمريـہ أنت غير مشترك في @YY8GG ** \n**انضم لتستطيع تشغيل الاغاني**",reply_markup=force_btn,parse_mode="markdown",disable_web_page_preview=False)
+        return False
+
 
 # Commands
 SKIP_COMMAND = get_command("SKIP_COMMAND")
