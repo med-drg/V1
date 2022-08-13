@@ -17,7 +17,7 @@ from AnonX import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
 async def khalid(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://telegra.ph/file/91d8df741e0758768a405.jpg",
-        caption=f"""⍆  𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝘁𝗼 𝘁𝗵𝗲 𝗗𝗿𝗮𝗴𝗼𝗻 𝗦𝗼𝘂𝗿𝗰𝗲 🎗.""",
+        caption=f"""n/⍆  𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝘁𝗼 𝘁𝗵𝗲 𝗗𝗿𝗮𝗴𝗼𝗻 𝗦𝗼𝘂𝗿𝗰𝗲 🎗.""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
